@@ -30,16 +30,27 @@
     <link rel="me" href="ryuwins@gmail.com">
     <link rel="me" href="tel:+380666666666">
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+      .gif-wrapper {
+        position: fixed;
+        left: 50%;
+        opacity: 0.8;
+        transform: translate(-50%, 0);
+        z-index: 100;
+      }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="credits">
-            Inspired by <a href="https://dribbble.com/shots/1828130-Resume" rel="external"><strong>Resume by Volodymyr Kushnir</strong></a> &#x1f60d;
+            Inspired by <a href="https://volodymyrkushnir.com/" rel="external"><strong>Resume by Volodymyr Kushnir</strong></a> &#x1f60d;
         </div>
     </header>
-
     <main>
+        <div class="gif-wrapper">
+            <img src="./giphy.gif" alt="gif" style="border-radius: 5px;">
+        </div>
         <article>
             <div class="page" style="border-color: midnightblue;">
                 <div class="stackable grid">
@@ -233,9 +244,15 @@
             </div>
         </article>
     </main>
-    <footer>
-        <em>“That's all Folks!”</em>&nbsp;&#x1F437;
-    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", showGif);
+      function showGif(){
+        const givDiv = document.querySelector('.gif-wrapper');
+        setTimeout(() => {
+          givDiv.style.visibility = "hidden";
+        }, 3500);
+      }
+    </script>
 </body>
 
 </html>
