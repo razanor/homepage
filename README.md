@@ -8,6 +8,6 @@ Here is the list what is **implemented**:
 5. [GitFlow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) is used during the project. There are a bunch of branches(they should have been deleted probably, but anyway, I'll keep them for reference)
 6. Animated GIF is added. Hope, it would make Ryu happy:smiley:
 7. The service worker is configured locally using pre-commit git hook
-8. Hopefully, [AWS](https://aws.amazon.com/?nc1=h_ls) will confirm my registration in less than 24 hours, and I'll be able to set up a basic CI/CD(If you reading it, it didn't happen)
+8. Webhook is added by setting up a basic CI/CD process using Travis CI and AWS. Check out the [link](http://razanor.com-production.s3-website.eu-central-1.amazonaws.com/) here!
 ***
 Thank you for a great lecture:heart_eyes:
